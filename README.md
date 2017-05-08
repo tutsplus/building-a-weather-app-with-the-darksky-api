@@ -5,7 +5,7 @@ Building for the web is just about as much fun as anyone can have, especially wh
 
 **Note:** we won’t be going into the minutiae of the build process, but you’ll have enough information from this overview to go and build something yourself.
 
-###Checklist of requirements before running demo locally:
+#### Checklist of requirements before running demo locally:
 
 - Obtain your personal DarkSky API key. Paste it in on Line 79 on index.js
 - Grab your personal Google API key. Paste it in on Line 268 on index.js
