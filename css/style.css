@@ -1,0 +1,338 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+					flex-direction: column;
+	-webkit-box-align: center;
+			-ms-flex-align: center;
+					align-items: center;
+	-webkit-box-pack: center;
+			-ms-flex-pack: center;
+					justify-content: center;
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+*::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	font: normal 100%/1.25 'Alegreya Sans', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	width: 100%;
+	background: #49B293;
+}
+
+::-webkit-input-placeholder {
+	color: #C9C9C9;
+}
+
+:-moz-placeholder {
+	color: #C9C9C9;
+}
+
+::-moz-placeholder {
+	color: #C9C9C9;
+}
+
+:-ms-input-placeholder {
+	color: #C9C9C9;
+}
+
+legend {
+	margin-bottom: 1rem;
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+	color: white;
+}
+
+label {
+	font-weight: 400;
+}
+
+button,
+input[type="text"] {
+	-webkit-appearance: none;
+		 -moz-appearance: none;
+					appearance: none;
+	border: none;
+	border-radius: 4px;
+}
+
+input[type="text"] {
+	box-sizing: border-box;
+	box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.75);
+	display: block;
+	margin: 0 0 0.875rem;
+	padding: 0.875rem;
+	font-weight: 400;
+}
+
+button:not(#back) {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
+	max-width: 410px;
+	margin-top: 1rem;
+	padding: 0.875rem;
+	-webkit-transition: 200ms all ease-in-out;
+	transition: 200ms all ease-in-out;
+	width: 100%;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #82B541;
+	color: white;
+}
+button:not(#back):hover {
+	cursor: pointer;
+	background: #6f9b38;
+}
+
+.fadein-stagger > * {
+	opacity: 0;
+	-webkit-transition-property: opacity, -webkit-transform;
+	transition-property: opacity, -webkit-transform;
+	transition-property: opacity, transform;
+	transition-property: opacity, transform, -webkit-transform;
+	-webkit-transition-duration: 300ms;
+					transition-duration: 300ms;
+	-webkit-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+					transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	-webkit-transform: translateY(-30px);
+					transform: translateY(-30px);
+}
+.fadein-stagger > *:nth-of-type(1) {
+	-webkit-transition-delay: 50ms;
+					transition-delay: 50ms;
+}
+.fadein-stagger > *:nth-of-type(2) {
+	-webkit-transition-delay: 100ms;
+					transition-delay: 100ms;
+}
+.fadein-stagger > *:nth-of-type(3) {
+	-webkit-transition-delay: 150ms;
+					transition-delay: 150ms;
+}
+.fadein-stagger > *:nth-of-type(4) {
+	-webkit-transition-delay: 200ms;
+					transition-delay: 200ms;
+}
+.fadein-stagger > *:nth-of-type(5) {
+	-webkit-transition-delay: 250ms;
+					transition-delay: 250ms;
+}
+.fadein-stagger > *:nth-of-type(6) {
+	-webkit-transition-delay: 300ms;
+					transition-delay: 300ms;
+}
+.fadein-stagger > *:nth-of-type(7) {
+	-webkit-transition-delay: 350ms;
+					transition-delay: 350ms;
+}
+.fadein-stagger > *.js-animated {
+	opacity: 1;
+	-webkit-transform: translateX(0) translateY(0);
+					transform: translateX(0) translateY(0);
+}
+
+.marvel-device .screen {
+	height: 100%;
+	overflow: scroll;
+	width: 100%;
+	text-align: left;
+	background: #002B36;
+}
+
+#logo {
+	-webkit-filter: invert(50%);
+					filter: invert(50%);
+	max-width: 100%;
+	padding: 2rem 1rem 1rem;
+}
+
+.form {
+	padding: 1rem;
+	width: 100%;
+	color: white;
+}
+.form ul {
+	overflow: auto;
+}
+
+#city-search {
+	width: 100%;
+}
+
+.form-field input {
+	width: 100%;
+}
+
+.city {
+	margin-bottom: 0;
+	width: 100%;
+	font-size: 1.375em;
+	font-weight: 700;
+	text-align: center;
+	color: white;
+}
+
+.summary {
+	margin-bottom: 0;
+	margin-top: 1.75rem;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.hourly {
+	word-wrap: break-word;
+}
+.hourly b {
+	display: block;
+	padding: 0.5rem 0 0.5rem 0;
+	color: white;
+}
+.hourly ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+}
+
+.hourly ul li {
+	margin: 0.1875rem;
+}
+.hourly ul li:not(:last-of-type)::after {
+	content: ',';
+}
+
+#back {
+	-webkit-appearance: none;
+		 -moz-appearance: none;
+					appearance: none;
+	border-radius: 0;
+	-webkit-transition: 200ms all ease-in-out;
+	transition: 200ms all ease-in-out;
+	width: 100%;
+	padding: 1rem;
+	z-index: 1;
+	font-size: 0.875em;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	background: #82B541;
+	color: white;
+}
+#back:hover {
+	cursor: pointer;
+	background: #6f9b38;
+}
+
+.graphic {
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.48), 0 1px 0 rgba(255, 255, 255, 0.1);
+	margin-bottom: 1rem;
+	padding: 1rem 1rem 2rem 1rem;
+	width: 100%;
+}
+.graphic canvas {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+#forecast {
+	height: 100%;
+	margin: auto;
+	width: 100%;
+}
+#forecast > li {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 2px;
+	margin: 1rem 0.5rem;
+	padding: 0.5rem;
+	background: #114856;
+}
+
+.card {
+	padding: 0.5rem;
+	width: 100%;
+}
+
+.front.card > div {
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.48), 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+input[type="checkbox"]:checked + label {
+	padding-left: 10px;
+	color: white;
+}
+input[type="checkbox"]:checked + label::before {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #82B541;
+}
+
+label[for="celsius"],
+label[for="celsius"]::before {
+	-webkit-transition: 200ms all ease-in-out;
+	transition: 200ms all ease-in-out;
+}
+
+label[for="celsius"] {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 30px;
+	padding-right: 10px;
+	line-height: 1.5;
+	cursor: pointer;
+}
+label[for="celsius"]::before {
+	content: " ";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	right: 0;
+	display: block;
+	width: 25px;
+	height: 25px;
+	border: 2px solid #82B541;
+	border-radius: 2px;
+	z-index: -1;
+}
+
+.list-reset {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}

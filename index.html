@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Envato Weather App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://rawgit.com/marvelapp/devices.css/master/assets/devices.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div class="marvel-device nexus5">
+			<div class="top-bar"></div>
+			<div class="sleep"></div>
+			<div class="volume"></div>
+			<div class="camera"></div>
+
+			<!-- MEAT AND TATERS OF APP -->
+			<div class="screen">
+				<img src="img/logo.svg" alt="the envato weather app" id="logo">
+				<form method="get" class="form">
+					<fieldset>
+						<legend>If searching by city the latitude and longitude input fields will autofill your coords.</legend>
+						<ul class="list-reset">
+							<li class="form-field">
+								<label for="city-search">City Name</label>
+								<input type="text" id="city-search" placeholder="e.g. Rochester, NY">
+							</li>
+
+							<li class="form-field">
+								<label for="latitude">Latitude</label>
+								<input type="text" id="latitude" placeholder="e.g. 42.9150747" required>
+							</li>
+
+							<li class="form-field">
+								<label for="longitude">Longitude</label>
+								<input type="text" id="longitude" placeholder="e.g. -77.784323" required>
+							</li>
+
+							<li class="form-field">
+								<input type="checkbox" id="celsius">
+								<label for="celsius">Report Celsius</label>
+							</li>
+						</ul>
+					</fieldset>
+
+					<button>Get Weather</button>
+				</form>
+			</div>
+			<!-- /END MEAT AND TATERS OF APP -->
+		</div>
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js'></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
